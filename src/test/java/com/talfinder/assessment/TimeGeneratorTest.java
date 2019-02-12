@@ -40,7 +40,7 @@ public class TimeGeneratorTest {
   }
 
   @Test
-  public void generateMaxTimeHourSecondBoundaries() {
+  public void generateMaxTimeHourMinuteBoundaries() {
     String time = TimeGenerator.generateMaxTime(new int[]{3, 3, 0, 0});
     errorCollector.checkThat(time, is(equalTo("03:30")));
 
